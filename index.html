@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Custom Website</title>
+    
+    <style>
+        /* General Reset and Base Styles */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+         img {
+            width: 300px;
+            border-radius: 10px;
+            display: block;
+            margin: 20px auto;
+        }
+        /* Header Styling */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        /* Navigation Styling */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Main Content Styling */
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        section {
+            padding: 40px 20px;
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Adjustments (for smaller screens) */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Awesome Custom Site</h1>
+        <p>A simple, functional template.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to My Site!</h2>
+            <p>This is the main landing page content. You can put your main message or a call-to-action here. This template uses a simple, responsive design powered by internal CSS.</p>
+            <a href="#contact" style="display: inline-block; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; margin-top: 15px;">Get Started Today</a>
+        </section>
+        <img src="images/1.png" alt="Photo 1">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing excellent service and innovative solutions. Feel free to replace this text with details about your mission, team, or history.</p>
+            <p>This structure uses standard HTML5 tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> for better semantics.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web Design & Development</li>
+                <li>Search Engine Optimization (SEO)</li>
+                <li>Content Creation</li>
+                <li>Technical Support</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>You can reach us by email at <a href="mailto:info@example.com">info@example.com</a> or use the simple form below (Note: A form requires a server-side script to actually send an email).</p>
+            
+            <form action="#" method="POST" style="max-width: 400px;">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;"><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;"><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;"></textarea><br>
+                
+                <button type="submit" style="background-color: #007bff; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 My Custom Website. All rights reserved.
+    </footer>
+
+</body>
+</html>
